@@ -10,6 +10,9 @@ import qrcode
 from telebot import types
 from io import BytesIO
 from dotenv import load_dotenv
+from keep_alive import keep_alive
+
+keep_alive()
 
 load_dotenv()
 ip_api = os.getenv('IP_API')
